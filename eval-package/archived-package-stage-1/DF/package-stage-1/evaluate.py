@@ -30,7 +30,8 @@ truth_dir = sys.argv[2]
 phase = sys.argv[3]
 
 # cm_key_file = os.path.join(truth_dir, 'C:\Users\bente\Desktop\model\RawBoost-antispoofing\our_metadata_list_派蒙.csv')
-cm_key_file = "C:\\Users\\bente\\Desktop\\model\\RawBoost-antispoofing\\our_metadata_list_派蒙_test.csv"
+# cm_key_file = "C:\\Users\\bente\\Desktop\\model\\RawBoost-antispoofing\\our_metadata_list_派蒙_test.csv"
+cm_key_file = "C:\\Users\\bente\\Desktop\\dataset\in_the_wild_metadata\meta_test.csv"
 
 
 def eval_to_score_file(score_file, cm_key_file):
@@ -49,7 +50,7 @@ def eval_to_score_file(score_file, cm_key_file):
     #cm_scores = submission_scores.merge(cm_data[cm_data[7] == phase], left_on=0, right_on=1, how='inner')  # check here for progress vs eval set
     cm_scores = submission_scores.merge(cm_data, left_on=0, right_on=0, how='inner')  # check here for progress vs eval set
     # print("cm_scores: ", cm_scores)
-    bona_cm = cm_scores[cm_scores[2] == 'bonafide']['1_x'].values
+    bona_cm = cm_scores[cm_scores[2] == 'bona-fide']['1_x'].values
     spoof_cm = cm_scores[cm_scores[2] == 'spoof']['1_x'].values
     # print("bona_cm: ", bona_cm)
     # print("spoof_cm: ", spoof_cm)

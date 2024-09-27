@@ -21,3 +21,6 @@ $: python evaluate.py C:/Users/bente/Desktop/model/RawBoost-antispoofing/'eval_C
 C:/Users/bente/Desktop/model/RawBoost-antispoofing/'eval_CM_scores_file.txt'
 
 python evaluate.py C:/Users/bente/Desktop/model/RawBoost-antispoofing/eval_Ourdata_pimon_score2.txt C:\Users\bente\Desktop\model\RawBoost-antispoofing\eval-package\keys eval 
+
+ITW
+python evaluate.py C:/Users/bente/Desktop/model/RawBoost-antispoofing/InTheWild_eval_CM_scores_file.txt C:\Users\bente\Desktop\model\RawBoost-antispoofing\eval-package\keys eval 

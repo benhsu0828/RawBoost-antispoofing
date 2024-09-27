@@ -40,7 +40,9 @@ To evaluate your own model on LA evaluation dataset:
 ```
 python main.py --track=LA --loss=WCE --is_eval --eval --model_path=./pre_trained_model/Best_model.pth --eval_output=eval_CM_scores_file.txt
 
-python mymain.py --track=LA --loss=WCE --is_eval --eval --model_path=./pre_trained_model/Best_model.pth --eval_output=InTheWild_eval_CM_scores_file2.txt
+ITW
+python ITWmain.py --track=LA --loss=WCE --is_eval --eval --model_path=./pre_trained_model/Best_model.pth --eval_output=InTheWild_eval_CM_scores_file.txt --database_path=C:/Users/bente/Desktop/dataset/release_in_the_wild/flac/ --protocols_path=C:/Users/bente/Desktop/dataset/in_the_wild_metadata/ITW_metadata.csv
+
 ```
 派盟
 python mymain.py --track=LA --loss=WCE --is_eval --eval --model_path=C:/Users/bente/Desktop/model/RawBoost-antispoofing/models/Best_pimon_epoch_58.pth --database_path=C:/Users/bente/Desktop/dataset/派蒙/flac/ --protocols_path=C:/Users/bente/Desktop/model/RawBoost-antispoofing/our_metadata_list_派蒙.csv --eval_output=eval_Ourdata_pimon_score2.txt

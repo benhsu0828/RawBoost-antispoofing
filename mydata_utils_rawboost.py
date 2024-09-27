@@ -116,15 +116,15 @@ def gen_ourdata_list_split(dir_meta, is_train=False, is_val=False, is_test=False
             if is_train:
                 if data_type == "train":
                     file_list.append(key)
-                    d_meta[key] = 1 if label == "bonafide" else 0
+                    d_meta[key] = 1 if label == "bona-fide" else 0
             elif is_val:
                 if data_type == "dev":
                     file_list.append(key)
-                    d_meta[key] = 1 if label == "bonafide" else 0
+                    d_meta[key] = 1 if label == "bona-fide" else 0
             elif is_test:
                 if data_type == "test":
                     file_list.append(key)
-                    d_meta[key] = 1 if label == "bonafide" else 0
+                    d_meta[key] = 1 if label == "bona-fide" else 0
 
     return d_meta, file_list
 
